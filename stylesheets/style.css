@@ -1,0 +1,287 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/style.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 16, ../sass/style.scss */
+body {
+  margin: 0;
+  background-color: #999;
+  width: 100%;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 25, ../sass/style.scss */
+  .container {
+    background-color: #fff;
+    padding: 10px 25px 0 25px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px;
+    position: relative;
+  }
+
+  /* line 36, ../sass/style.scss */
+  .sign_up {
+    margin: 105px 0 0 160px;
+    width: 90px;
+    position: absolute;
+    text-align: justify;
+  }
+  /* line 42, ../sass/style.scss */
+  .sign_up p {
+    font-size: 0.9em;
+  }
+
+  /* line 47, ../sass/style.scss */
+  .info {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+    height: 205px;
+    background-color: #6699cc;
+    margin-top: 40px;
+  }
+  /* line 59, ../sass/style.scss */
+  .info ul {
+    padding-left: 10px;
+  }
+  /* line 63, ../sass/style.scss */
+  .info li {
+    list-style-type: none;
+    text-transform: capitalize;
+  }
+  /* line 68, ../sass/style.scss */
+  .info a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  /* line 74, ../sass/style.scss */
+  .price {
+    font-size: 7em;
+    margin-left: 10px;
+  }
+
+  /* line 78, ../sass/style.scss */
+  button {
+    min-width: 90px;
+    min-height: 30px;
+    font-size: 0.9em;
+  }
+
+  /* line 83, ../sass/style.scss */
+  .pricing_content {
+    margin-top: 30px;
+  }
+
+  /* line 86, ../sass/style.scss */
+  .currency {
+    font-size: 1em;
+    padding-top: 25px;
+  }
+
+  /* line 90, ../sass/style.scss */
+  .additional_info {
+    font-size: 1.3em;
+  }
+
+  /* line 93, ../sass/style.scss */
+  .info ul li {
+    font-size: 1em;
+    padding-top: 18px;
+  }
+}
+@media screen and (min-width: 404px) {
+  /* line 102, ../sass/style.scss */
+  .container {
+    max-width: 404px;
+  }
+
+  /* line 105, ../sass/style.scss */
+  .price {
+    font-size: 10em;
+    margin-left: 15px;
+  }
+
+  /* line 110, ../sass/style.scss */
+  button {
+    min-width: 135px;
+    min-height: 40px;
+    font-size: 1.2em;
+  }
+
+  /* line 116, ../sass/style.scss */
+  .sign_up {
+    margin: 105px 0 0 220px;
+    width: 135px;
+  }
+  /* line 120, ../sass/style.scss */
+  .sign_up p {
+    font-size: 1em;
+  }
+
+  /* line 125, ../sass/style.scss */
+  .currency {
+    font-size: 1.6em;
+    padding-top: 30px;
+  }
+
+  /* line 130, ../sass/style.scss */
+  .pricing_content {
+    margin-top: 0px;
+  }
+
+  /* line 134, ../sass/style.scss */
+  .additional_info {
+    font-size: 1.8em;
+  }
+
+  /* line 138, ../sass/style.scss */
+  .info ul li {
+    font-size: 1.2em;
+    padding-top: 15px;
+  }
+}
+/* line 143, ../sass/style.scss */
+.container {
+  height: 600px;
+}
+
+/* line 146, ../sass/style.scss */
+.pricing {
+  height: 252px;
+  width: 100%;
+  background-color: #cccccc;
+  margin-bottom: 40px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+}
+/* line 159, ../sass/style.scss */
+.pricing p {
+  color: #666666;
+}
+
+/* line 164, ../sass/style.scss */
+.pricing_content {
+  float: left;
+  padding-left: 20px;
+}
+
+/* line 169, ../sass/style.scss */
+.price {
+  font-weight: bold;
+}
+
+/* line 173, ../sass/style.scss */
+.currency {
+  position: absolute;
+}
+
+/* line 177, ../sass/style.scss */
+button {
+  border-radius: 5px;
+  border: none;
+  background: linear-gradient(#cccc66, #99cc00 50%, #669900 30%, #99cc00);
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+/* line 184, ../sass/style.scss */
+.price, .additional_info, button {
+  font-family: Helvetica, sans-serif;
+}
+
+/* line 187, ../sass/style.scss */
+.additional_info {
+  text-transform: capitalize;
+}
+
+/* line 190, ../sass/style.scss */
+.info {
+  height: 205px;
+  background-color: #6699cc;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+/* line 196, ../sass/style.scss */
+.info ul {
+  padding-left: 10px;
+}
+/* line 200, ../sass/style.scss */
+.info ul li {
+  list-style-type: none;
+  text-transform: capitalize;
+}
+/* line 205, ../sass/style.scss */
+.info ul li a {
+  color: #fff;
+  text-decoration: none;
+}

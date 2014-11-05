@@ -1,0 +1,221 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/style.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+$font-stack: Helvetica, sans-serif;
+$width: min-width;
+$min-width: 90px;
+
+$container-background-color: #fff;
+
+// using variable
+
+body {
+	margin:0;
+	background-color: #999;
+	width: 100%;
+}
+
+@media screen 
+and ($width : 320px) {
+
+.container {
+	background-color: $container-background-color;
+	padding:10px 25px 0 25px;
+	margin-left: auto;
+	margin-right:auto;
+	max-width: 300px;
+	position: relative;
+}
+
+// example of nesting
+
+.sign_up {
+	margin: 105px 0 0 160px;
+	width:90px;
+	position: absolute;
+	text-align: justify;
+	
+	p {
+		font-size: 0.9em;
+	}
+}
+
+.info {
+	@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+ 	@include border-radius(10px);
+	height: 205px;
+	background-color: #6699cc;
+	margin-top: 40px;
+
+	ul {
+		padding-left: 10px;
+	}
+
+	li {
+		list-style-type: none;
+		text-transform: capitalize;
+	}
+
+	a {
+		color: #fff;
+		text-decoration: none;
+	}
+}
+
+.price {
+	font-size: 7em;
+	margin-left: 10px;
+	}
+button {
+	min-width: $min-width;
+	min-height: 30px;
+	font-size: 0.9em;
+	}
+.pricing_content {
+	margin-top: 30px;
+	}
+.currency {
+	font-size: 1em;
+	padding-top: 25px;
+	}
+.additional_info{
+	font-size: 1.3em;
+	}
+.info ul li {
+	font-size: 1em;
+	padding-top: 18px;
+	}
+}
+
+@media screen 
+and ($width : 404px) {
+
+.container{
+	max-width: 404px;
+}
+.price {
+	font-size: 10em;
+	margin-left: 15px;
+	}
+
+button {
+	min-width: 135px;
+	min-height: 40px;
+	font-size: 1.2em;
+	}
+
+.sign_up {
+	margin: 105px 0 0 220px;
+	width:135px;
+
+	p {
+		font-size: 1em;
+	}
+}
+
+.currency {
+	font-size: 1.6em;
+	padding-top: 30px;
+	}
+
+.pricing_content {
+	margin-top: 0px;
+	}
+
+.additional_info{
+	font-size: 1.8em;
+	}
+
+.info ul li {
+	font-size: 1.2em;
+	padding-top: 15px;
+	}
+}
+.container {
+	height: 600px;
+}
+.pricing {
+	height: 252px;
+	width: 100%;
+	background-color: #cccccc;
+	margin-bottom: 40px;
+	@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+	@include border-radius(10px);
+
+	p {
+	color: #666666;
+	}
+}
+
+.pricing_content {
+	float: left;
+	padding-left: 20px;
+}
+
+.price {
+	font-weight: bold;
+}
+
+.currency {
+	position: absolute;
+}
+
+button {
+	border-radius: 5px;
+	border: none;
+	background: linear-gradient(#cccc66, #99cc00 50%, #669900 30%, #99cc00);
+	text-transform: capitalize;
+	font-weight:bold;
+}
+.price, .additional_info, button {
+	font-family:$font-stack;
+}
+.additional_info{
+	text-transform: capitalize;
+}
+.info {
+	height: 205px;
+	background-color: #6699cc;
+	border-radius: 10px;
+	margin-top: 40px;
+
+	ul {
+		padding-left: 10px;
+	}
+
+	ul li {
+		list-style-type: none;
+		text-transform: capitalize;
+	}
+
+	ul li a {
+		color: #fff;
+		text-decoration: none;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
